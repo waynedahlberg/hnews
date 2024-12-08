@@ -17,7 +17,7 @@ struct StoryDetailView: View {
         if let url = story.url.flatMap({ URL(string: $0) }) {
           WebView(url: url)
         } else {
-          let hnURL = URL(string: "https://news.ycombinator.com/item?id=\(story.objectId)")!
+          let hnURL = URL(string: "https://news.ycombinator.com/item?id=\(story.objectID)")!
                               WebView(url: hnURL)
         }
       }

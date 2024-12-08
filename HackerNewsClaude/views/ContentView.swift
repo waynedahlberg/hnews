@@ -20,6 +20,8 @@ struct ContentView: View {
             selectedStory = story
           }
       }
+      .scrollIndicators(.hidden)
+      .listStyle(.plain)
       .navigationTitle("Hacker News")
       .refreshable {
         await viewModel.fetchStories()

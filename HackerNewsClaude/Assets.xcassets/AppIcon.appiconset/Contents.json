@@ -1,30 +1,163 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
-      "platform" : "ios",
-      "size" : "1024x1024"
+      "display-gamut" : "sRGB",
+      "filename" : "iphone-icon-20x20-sRGB@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "20x20"
     },
     {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "dark"
-        }
-      ],
-      "idiom" : "universal",
-      "platform" : "ios",
-      "size" : "1024x1024"
+      "display-gamut" : "display-P3",
+      "filename" : "iphone-icon-20x20-displayP3@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "20x20"
     },
     {
-      "appearances" : [
-        {
-          "appearance" : "luminosity",
-          "value" : "tinted"
-        }
-      ],
-      "idiom" : "universal",
-      "platform" : "ios",
+      "display-gamut" : "sRGB",
+      "filename" : "iphone-icon-20x20-sRGB@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "20x20"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "filename" : "iphone-icon-20x20-displayP3@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "20x20"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "filename" : "iphone-icon-29x29-sRGB@1x.png",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "size" : "29x29"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "filename" : "iphone-icon-29x29-displayP3@1x.png",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "size" : "29x29"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "filename" : "iphone-icon-29x29-sRGB@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "filename" : "iphone-icon-29x29-displayP3@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "filename" : "iphone-icon-29x29-sRGB@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "29x29"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "filename" : "iphone-icon-29x29-displayP3@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "29x29"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "filename" : "iphone-icon-40x40-sRGB@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "filename" : "iphone-icon-40x40-displayP3@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "filename" : "iphone-icon-40x40-sRGB@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "40x40"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "filename" : "iphone-icon-40x40-displayP3@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "40x40"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "filename" : "iphone-icon-57x57-sRGB@1x.png",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "size" : "57x57"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "filename" : "iphone-icon-57x57-displayP3@1x.png",
+      "idiom" : "iphone",
+      "scale" : "1x",
+      "size" : "57x57"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "filename" : "iphone-icon-57x57-sRGB@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "57x57"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "filename" : "iphone-icon-57x57-displayP3@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "57x57"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "filename" : "iphone-icon-60x60-sRGB@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "60x60"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "filename" : "iphone-icon-60x60-displayP3@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "60x60"
+    },
+    {
+      "display-gamut" : "sRGB",
+      "filename" : "iphone-icon-60x60-sRGB@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "60x60"
+    },
+    {
+      "display-gamut" : "display-P3",
+      "filename" : "iphone-icon-60x60-displayP3@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "ios-marketing-icon-1024x1024@1x.png",
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
       "size" : "1024x1024"
     }
   ],
