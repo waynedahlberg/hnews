@@ -41,8 +41,13 @@ struct StoryRow: View {
           .font(.system(size: 10))
           .foregroundStyle(.orange)
           .opacity(0.8)
+          
           Text("by \(story.author)")
             .foregroundStyle(.secondary)
+          
+          Text(timeAgoString(from: story.created_at) + " ago")
+            .foregroundStyle(.secondary)
+            .font(.caption)
         }
         .font(.caption)
       }
@@ -65,12 +70,17 @@ struct StoryRow: View {
             RoundedRectangle(cornerRadius: 4)
               .fill(.gray.opacity(0.1))
           }
+          .background(Color.white)
+          .clipShape(RoundedRectangle(cornerRadius: 4))
           .frame(width: 40, height: 40)
         } else {
           RoundedRectangle(cornerRadius: 4)
             .fill(.gray.opacity(0.1))
-            .stroke(Color(.tertiarySystemFill))
             .frame(width: 40, height: 40)
+            .overlay(
+              RoundedRectangle(cornerRadius: 4)
+                .stroke(.orange, lineWidth: 2)
+            )
         }
       }
       .task {
@@ -80,6 +90,24 @@ struct StoryRow: View {
       }
     }
   }
+  
+  private func timeAgoString(from dateString: String) -> String {
+      let formatter = ISO8601DateFormatter()
+      formatter.formatOptions = [.withInternetDateTime]
+      guard let date = formatter.date(from: dateString) else { return "" }
+      
+      let now = Date()
+      let components = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date, to: now)
+      
+      if let year = components.year, year > 0 { return "\(year)y" }
+      if let month = components.month, month > 0 { return "\(month)mo" }
+      if let day = components.day, day > 0 { return "\(day)d" }
+      if let hour = components.hour, hour > 0 { return "\(hour)h" }
+      if let minute = components.minute, minute > 0 { return "\(minute)min" }
+      if let second = components.second, second > 0 { return "\(second)s" }
+      
+      return "just now"
+    }
 }
 
 #Preview {

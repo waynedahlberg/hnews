@@ -19,7 +19,10 @@ import Observation
     
     do {
       let url = URL(string: "https://hn.algolia.com/api/v1/search?tags=front_page")!
-      let (data, _) = try await URLSession.shared.data(from: url)
+      var request = URLRequest(url: url)
+      request.cachePolicy = .reloadIgnoringLocalCacheData
+      
+      let (data, _) = try await URLSession.shared.data(for: request)
       
       // Debug: Print the JSON string
 //      if let jsonString = String(data: data, encoding: .utf8) {
